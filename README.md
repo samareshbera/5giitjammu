@@ -8,4 +8,4 @@
     b) gNB
 
 
-``abc"
+`sudo apt-get install`
