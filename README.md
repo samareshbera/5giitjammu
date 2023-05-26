@@ -25,3 +25,15 @@
     `sudo apt install iproute2`  
     `sudo snap install cmake --classic`  
     
+
+    ## Building
+    Use the following command for building.
+
+    `cd ~/UERANSIM`  
+    `make` 
+
+    After the compilation is successful, the output binaries are saved to `~/UERANSIM/build` folder .
+
+    Run `nr-gnb` and `nr-ue` to start using UE and gNB.
+
+    
