@@ -1,13 +1,12 @@
 # 5giitjammu
 5G network - using UERANSIM and Open5GS
 
-**Add the steps**
+# 1. Machine Setup
 
-1. Machine Setup
     a) UE (User Equipment)  
     b) gNB (gNodeB)  
 
-    Firstly, ensure that you have all the updated packages installed in Ubuntu.
+    Firstly, ensure that you have all the updated packages installed.
 
     `sudo apt update`  
     `sudo apt upgrade -y`  
@@ -32,8 +31,7 @@
     `cd ~/UERANSIM`  
     `make` 
 
-    After the compilation is successful, the output binaries are saved to `~/UERANSIM/build` folder .
+    After the compilation is successful, the output binaries are saved to `~/UERANSIM/build` folder.
 
     Run `nr-gnb` and `nr-ue` to start using UE and gNB.
 
-    
