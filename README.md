@@ -3,33 +3,34 @@
 
 **Add the steps**
 
-1. Machine Setup
-    a) UE (User Equipment)
-    b) gNB (gNodeB)
+# Machine Setup  
+    
+    a) UE (User Equipment)  
+    b) gNB (gNodeB)  
 
     Firstly, ensure that you have all the updated packages installed in Ubuntu.
 
-    `sudo apt update`
-    `sudo apt upgrade -y`
+    `sudo apt update`  
+    `sudo apt upgrade -y`  
 
     Install the latest version of UERAMSIM on the UE and gNB. The same can be done by cloning the repository.
 
-    `git clone https://github.com/aligungr/UERANSIM`
+    `git clone https://github.com/aligungr/UERANSIM`  
 
     Other packages that are required can be installed by these commands:
     
-    `sudo apt install make`
-    `sudo apt install gcc`
-    `sudo apt install g++`
-    `sudo apt install libsctp-dev lksctp-tools`
-    `sudo apt install iproute2`
-    `sudo snap install cmake --classic`
+    `sudo apt install make`  
+    `sudo apt install gcc`  
+    `sudo apt install g++`  
+    `sudo apt install libsctp-dev lksctp-tools`  
+    `sudo apt install iproute2`  
+    `sudo snap install cmake --classic`  
 
 
     # CPF and UPF
 
-    c) CPF (Control Plane Functions)
-    d) UPF (User Plane Functions)
+    c) CPF (Control Plane Functions)  
+    d) UPF (User Plane Functions)  
 
     # MongoDB installation  
 
@@ -90,69 +91,69 @@
     ## Modify "/etc/open5gs/amf.yaml" to set the NGAP IP address, PLMN ID, TAC and NSSAI.
 
     ngap:
--      - addr: 127.0.0.5
-+      - addr: 192.168.100.8
+     - addr: 127.0.0.5
+     - addr: 192.168.100.8
 
     guami:
        - plmn_id:
--          mcc: 999
--          mnc: 70
-+          mcc: 901
-+          mnc: 70
+            mcc: 999
+            mnc: 70
+            mcc: 901
+            mnc: 70
 
     tai:
        - plmn_id:
--          mcc: 999
--          mnc: 70
-+          mcc: 901
-+          mnc: 70
+            mcc: 999
+            mnc: 70
+            mcc: 901
+            mnc: 70
 
     plmn_support:
        - plmn_id:
--          mcc: 999
--          mnc: 70
-+          mcc: 901
-+          mnc: 70
+            mcc: 999
+            mnc: 70
+            mcc: 901
+            mnc: 70
 
     ## open5gs/install/etc/open5gs/smf.yaml
 
     pfcp:
--      - addr: 127.0.0.4
--      - addr: ::1
-+      - addr: 192.168.100.
+        - addr: 127.0.0.4
+        - addr: ::1
+        - addr: 192.168.100.
 
     gtpu:
--      - addr: 127.0.0.4
--      - addr: ::1
-+      - addr: 192.168.0.111
+        - addr: 127.0.0.4
+        - addr: ::1
+        - addr: 192.168.0.111
 
     subnet:
        - addr: 10.45.0.1/16
--      - addr: 2001:db8:cafe::1/48
-+        dnn: internet
-+      - addr: 10.46.0.1/16
+        - addr: 2001:db8:cafe::1/48
+          dnn: internet
+        - addr: 10.46.0.1/16
 
     pfcp:
--      - addr: 127.0.0.7
-+      - addr: 192.168.0.112
-+        dnn: [internet]
+        - addr: 127.0.0.7
+        - addr: 192.168.0.112
+          dnn: [internet]
 
     ## open5gs/install/etc/open5gs/upf.yaml
 
     upf:
      pfcp:
--      - addr: 127.0.0.7
-+      - addr: 192.168.100.10
+        - addr: 127.0.0.7
+        - addr: 192.168.100.10
 
     gtpu:
--      - addr: 127.0.0.7
-+      - addr: 192.168.100.10
+        - addr: 127.0.0.7
+        - addr: 192.168.100.10
 
     subnet:
        - addr: 10.45.0.1/16
--      - addr: 2001:db8:cafe::1/48
-+        dnn: internet
-+        dev: ogstun
+        - addr: 2001:db8:cafe::1/48
+          dnn: internet
+          dev: ogstun
 
     # Restart
 
