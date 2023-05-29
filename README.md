@@ -1,5 +1,7 @@
 # 5giitjammu
 5G network - using UERANSIM and Open5GS
+![5G block diagram](https://github.com/samareshbera/5giitjammu/assets/134690717/ffb00439-5357-4b65-baa3-b4f52b4fe534)
+
 
 a) UE (User Equipment)  
 b) gNB (gNodeB)  
