@@ -5,9 +5,11 @@
 
 
 a) UE (User Equipment)  
-b) gNB (gNodeB)  
+b) gNB (gNodeB) 
 
-Firstly, ensure that you have all the updated packages installed in Ubuntu.
+Firstly, we have to create the NAT Network for all the virutal machines, name it as a 5G network with IP address- 10.0.2.0/24
+
+Ensure that you have all the updated packages installed in Ubuntu.
 
 `sudo apt update`  
 `sudo apt upgrade -y`  
@@ -23,8 +25,31 @@ Other packages that are required can be installed by these commands:
 `sudo apt install g++`  
 `sudo apt install libsctp-dev lksctp-tools`  
 `sudo apt install iproute2`  
-`sudo snap install cmake --classic`  
+`sudo snap install cmake --classic` 
 
+File configuration
+(UERANSIM/config/open5gs-ue.yaml)
+
+supi: 'imsi-901700000000001'
+
+mcc: '901'
+mnc: '70'
+
+gnbSearchList:
+  - 10.0.2.13
+
+(UERANSIM/config/open5gs-gnb.yaml)
+
+mcc: '901'
+mnc: '70'
+
+linkIp: 10.0.2.11  # gNB's local IP address for Radio Link Simulation (Usually same with local IP)
+ngapIp: 10.0.2.11  # gNB's local IP address for N2 Interface (Usually same with local IP)
+gtpIp:  10.0.2.11  # gNB's local IP address for N3 Interface (Usually same with local IP)
+
+amfConfigs:
+  - address: 10.0.2.13
+    port: 38412
 
 # CPF and UPF
 
