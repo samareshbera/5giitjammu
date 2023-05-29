@@ -1,4 +1,4 @@
-# 5giitjammu
+
 5G network - using UERANSIM and Open5GS
 
 ![Screenshot 2023-05-29 153657](https://github.com/samareshbera/5giitjammu/assets/134690717/65844f36-9a46-439d-82af-ccd6f9afb25d)
@@ -7,7 +7,8 @@
  UE (User Equipment)  
  gNB (gNodeB) 
 
-Firstly, we have to create the NAT Network for all the virutal machines, name it as a 5G network with IP address - 10.0.2.0/24
+Firstly, create a NAT Network for all the virutal machines.
+Name it as `5GNetwork` with the IP address as `10.0.2.0/24`.
 
 Ensure that you have all the updated packages installed in Ubuntu.
 
@@ -27,7 +28,7 @@ Other packages that are required can be installed by these commands:
 `sudo apt install iproute2`  
 `sudo snap install cmake --classic` 
 
-## File configuration  
+## File Configuration  
 
 UERANSIM/config/open5gs-ue.yaml
 
