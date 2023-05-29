@@ -4,10 +4,10 @@
 ![Screenshot 2023-05-29 153657](https://github.com/samareshbera/5giitjammu/assets/134690717/65844f36-9a46-439d-82af-ccd6f9afb25d)
 
 
-a) UE (User Equipment)  
-b) gNB (gNodeB) 
+ UE (User Equipment)  
+ gNB (gNodeB) 
 
-Firstly, we have to create the NAT Network for all the virutal machines, name it as a 5G network with IP address- 10.0.2.0/24
+Firstly, we have to create the NAT Network for all the virutal machines, name it as a 5G network with IP address - 10.0.2.0/24
 
 Ensure that you have all the updated packages installed in Ubuntu.
 
@@ -27,9 +27,9 @@ Other packages that are required can be installed by these commands:
 `sudo apt install iproute2`  
 `sudo snap install cmake --classic` 
 
-File configuration  
+## File configuration  
 
-    (UERANSIM/config/open5gs-ue.yaml)
+UERANSIM/config/open5gs-ue.yaml
 
     supi: 'imsi-901700000000001'  
 
@@ -39,7 +39,7 @@ File configuration
     gnbSearchList:  
       - 10.0.2.13  
 
-    (UERANSIM/config/open5gs-gnb.yaml)
+UERANSIM/config/open5gs-gnb.yaml
 
     mcc: '901'  
     mnc: '70'  
@@ -58,13 +58,11 @@ File configuration
 
 The Open5GS is an open source implementation of 5G mobile core network.  
 
-Unlike previous cellular networks 5G Core network architecture designed with Network Function Virtualization and Software Defined Networking.
-
 In this scenario, the following IP addresses are assigned.
 
-UE = 10.0.2.15
-gNB = 10.0.2.11
-Open5GS = 10.2.0.13
+UE = 10.0.2.15  
+gNB = 10.0.2.11  
+Open5GS = 10.2.0.13  
 
 # Machine Setup
 
@@ -181,8 +179,7 @@ Click SAVE Button
 
 `sudo ./build/nr-ue -c config/open5gs-ue.yaml`  
 
-## TEST 5G NEtwork from UE
-(ping command bind direcly to uesimtun0)
+## Testing 5G Network from UE
+(ping command bind direcly to uesimtun0)  
 `ping -I uesimtun0 google.com`  
-
 
