@@ -142,7 +142,6 @@ Node.js is required to build the WebUI of Open5GS.
 `sudo apt install curl`  
 `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`  
 `sudo apt install nodejs` 
-`curl -fsSL https://open5gs.org/open5gs/assets/webui/install | sudo -E bash -`  
 `git clone https://github.com/open5gs/open5gs.git`  
 
 
@@ -161,7 +160,7 @@ Server listening can be changed by setting the environment variable HOSTNAME or 
 `PORT=3000 npm run dev`
 
 
-Fire up a web browser and login to http://10.0.2.13:3000
+Fire up a web browser and login to http://10.0.2.13:3000 (for `npm run dev`: `127.0.0.1:3000`)
 
 Username: admin
 Password: 1423
@@ -182,7 +181,7 @@ Click SAVE Button
 
 `sudo ./build/nr-ue -c config/open5gs-ue.yaml`  
 
-## TEST 5G NEtwork
+## TEST 5G NEtwork from UE
 (ping command bind direcly to uesimtun0)
 `ping -I uesimtun0 google.com`  
 
