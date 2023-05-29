@@ -136,10 +136,10 @@ Run the following commands in different terminals windows to see the logs.
 
 Node.js is required to build the WebUI of Open5GS.
 
-`sudo apt update`
+`sudo apt update`  
 `sudo apt install curl`  
 `curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -`  
-`sudo apt install nodejs` 
+`sudo apt install nodejs`  
 `git clone https://github.com/open5gs/open5gs.git`  
 
 
@@ -157,15 +157,16 @@ Server listening can be changed by setting the environment variable HOSTNAME or 
 `HOSTNAME=10.0.2.13 npm run dev`  
 `PORT=3000 npm run dev`
 
+## Adding a UE subscriber
 
 Fire up a web browser and login to http://10.0.2.13:3000 (for `npm run dev`: `127.0.0.1:3000`)
 
-Username: admin
-Password: 1423
+    Username: admin  
+    Password: 1423
 
 Add subscriber info.
 
-IMSI: 901700000000001
+    IMSI: 901700000000001
 
 Click SAVE Button
 
