@@ -27,10 +27,11 @@ Other packages that are required can be installed by these commands:
 `sudo apt install iproute2`  
 `sudo snap install cmake --classic` 
 
-File configuration
-(UERANSIM/config/open5gs-ue.yaml)
+File configuration  
 
-`supi: 'imsi-901700000000001'`  
+    (UERANSIM/config/open5gs-ue.yaml)
+
+    supi: 'imsi-901700000000001'  
 
     mcc: '901'  
     mnc: '70'  
