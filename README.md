@@ -170,3 +170,19 @@ Add subscriber info.
 IMSI: 901700000000001
 
 Click SAVE Button
+
+## gNB setup
+(start gnb with open5gc-gnb.yaml config file)
+
+`./build/nr-gnb -c config/open5gs-gnb.yaml`  
+
+## UE setup
+(start gnb with open5gc-ue.yaml config file)
+
+`sudo ./build/nr-ue -c config/open5gs-ue.yaml`  
+
+## TEST 5G NEtwork
+(ping command bind direcly to uesimtun0)
+`ping -I uesimtun0 google.com`  
+
+
