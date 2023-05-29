@@ -32,24 +32,24 @@ File configuration
 
 `supi: 'imsi-901700000000001'`  
 
-`mcc: '901'`  
-`mnc: '70'`  
+    mcc: '901'  
+    mnc: '70'  
 
-`gnbSearchList:`  
-  `- 10.0.2.13`  
+    gnbSearchList:  
+      - 10.0.2.13  
 
-(UERANSIM/config/open5gs-gnb.yaml)
+    (UERANSIM/config/open5gs-gnb.yaml)
 
-`mcc: '901'`  
-`mnc: '70'`  
+    mcc: '901'  
+    mnc: '70'  
 
-`linkIp: 10.0.2.11  # gNB's local IP address for Radio Link Simulation (Usually same with local IP)`  
-`ngapIp: 10.0.2.11  # gNB's local IP address for N2 Interface (Usually same with local IP)`  
-`gtpIp:  10.0.2.11  # gNB's local IP address for N3 Interface (Usually same with local IP)`  
+    linkIp: 10.0.2.11  # gNB's local IP address for Radio Link Simulation (Usually same with local IP)  
+    ngapIp: 10.0.2.11  # gNB's local IP address for N2 Interface (Usually same with local IP)  
+    gtpIp:  10.0.2.11  # gNB's local IP address for N3 Interface (Usually same with local IP)  
 
-`amfConfigs:`  
-  `- address: 10.0.2.13`  
-    `port: 38412`  
+    amfConfigs:  
+      - address: 10.0.2.13  
+        port: 38412  
 
 
 
