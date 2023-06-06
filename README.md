@@ -230,7 +230,7 @@ The base station gNB (10.0.2.11) responds back to the UE (10.0.2.15).
 
 ## 5G Message Flow
 
-![5G flow](https://github.com/samareshbera/5giitjammu/assets/134690717/81a9ad7a-0c67-44d2-b979-3d9ed04047e7)
+![Screenshot 2023-06-06 215644](https://github.com/samareshbera/5giitjammu/assets/134690717/4e543105-331e-499f-85fa-c7451fe66657)
 
 To check for Internet access, try pinging `google.com` from the UE.
 
