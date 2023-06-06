@@ -212,7 +212,7 @@ Open5gs(10.0.2.13) will send NGSetupResponse to gNB(10.0.2.11). (4)
 
 ![Screenshot 2023-06-06 233442](https://github.com/samareshbera/5giitjammu/assets/134690717/d2411c60-a9af-4ed4-a3da-4f62a63db7c1)  
 
-After receiving response, gNB(10.0.2.11) sends an Acknowledgement to Open5gs(10.0.2.13). (4)  
+After receiving response, gNB(10.0.2.11) will send an Acknowledgement to Open5gs(10.0.2.13). (4)  
 
 ![Screenshot 2023-06-06 233728](https://github.com/samareshbera/5giitjammu/assets/134690717/71c1c792-0436-4045-9f0e-f3837d845b26)  
 
