@@ -207,22 +207,24 @@ Run the gNB machine.
 
 It is seen that gNB (10.0.2.11) sends a NG Setup Request to Open5GS machine (10.0.2.13).  
 
-*INSERT 1ngap_req.png...   
+![1ngap_req](https://github.com/samareshbera/5giitjammu/assets/96954630/c9b0e7fc-9266-443d-ae10-2ae4fce3bad5)
+
 
 Open5GS machine (10.0.2.13) replies to the gNB (10.0.2.11) with a successful NG Setup Response.  
 
-*INSERT 2ngapp_req.png...     
+![2ngap_res](https://github.com/samareshbera/5giitjammu/assets/96954630/a4489910-1cbb-4fce-ab48-abd543308a96)
 
 
 Start the UE machine.  
 
 The first UE (10.0.2.15) subscriber with IMSI = 901700000000001 sends a connection request to the gNB (10.0.2.11).  
 
-*INSERT 1ue_ws......     
+![1ue_ws](https://github.com/samareshbera/5giitjammu/assets/96954630/3e78023f-5265-4309-9f71-2f7603138669)
+    
 
 The base station gNB (10.0.2.11) responds back to the UE (10.0.2.15).  
 
-*insert 2ue_ws....    
+![2ue_ws](https://github.com/samareshbera/5giitjammu/assets/96954630/12dbae93-2f74-474a-91b9-9ff2dcb7dcd1)
 
 
 
