@@ -192,40 +192,65 @@ Click SAVE Button
 
 Wireshark is used to monitor the packet flows between the machines.  
 
-Run Wireshark in the Open5GS machine.  
+## Packets Flow
+
+![Screenshot 2023-06-06 215644](https://github.com/samareshbera/5giitjammu/assets/134690717/4e543105-331e-499f-85fa-c7451fe66657)
 
 Restart the `amfd` and `upfd` services.  
 
 It is seen that the PFCP session is established.  
 
-*INSERT THE PFCP IMAGE HERE.....  
+PFCP Association Setup Request is sent from SMF to UPF. (5)  
 
-Now, gNB(10.0.2.11) sends a NGSetupRequest to Open5gs(10.0.2.13). (3)  
+![5](https://github.com/samareshbera/5giitjammu/assets/96954630/94aa6b2a-9adc-49af-a8c8-891042df8e9a)
+
+UPF replies back to SMF with a PFCP Association Setup Response. (6)  
+
+![6](https://github.com/samareshbera/5giitjammu/assets/96954630/f1a6d189-16cc-4a5a-a48a-fe6fade45a5b)
+
+
+The gNB (10.0.2.11) sends an NGSetupRequest to Open5GS(10.0.2.13). (3)  
 
 ![Screenshot 2023-06-06 231954](https://github.com/samareshbera/5giitjammu/assets/134690717/d02666b6-babf-4082-b223-600084ade942)  
 
-Open5gs(10.0.2.13) sends an acknowledgement to gNB(10.0.2.11) after successfully receiving the request. (3)  
+Open5GS (10.0.2.13) sends an acknowledgement to gNB (10.0.2.11) after successfully receiving the request. (3)  
 
 ![Screenshot 2023-06-06 232707](https://github.com/samareshbera/5giitjammu/assets/134690717/8086ea65-6c43-4c55-a3b6-d77bb74167c3)  
 
-Open5gs(10.0.2.13) will send NGSetupResponse to gNB(10.0.2.11). (4)  
+Open5GS (10.0.2.13) sends NGSetupResponse to gNB(10.0.2.11). (4)  
 
 ![Screenshot 2023-06-06 233442](https://github.com/samareshbera/5giitjammu/assets/134690717/d2411c60-a9af-4ed4-a3da-4f62a63db7c1)  
 
-After receiving response, gNB(10.0.2.11) will send an Acknowledgement to Open5gs(10.0.2.13). (4)  
+After receiving response, gNB(10.0.2.11) sends an acknowledgement to Open5GS (10.0.2.13). (4)  
+
 
 ![Screenshot 2023-06-06 233728](https://github.com/samareshbera/5giitjammu/assets/134690717/71c1c792-0436-4045-9f0e-f3837d845b26)  
 
+After the UE is started, it (10.0.2.15) sends a PDU session request to gNB (10.0.2.11). (1)  
 
-## 5G Message Flow
+![1](https://github.com/samareshbera/5giitjammu/assets/96954630/48e5ba43-14ef-47fe-be74-4d83908f8f24)
 
-![Screenshot 2023-06-06 215644](https://github.com/samareshbera/5giitjammu/assets/134690717/4e543105-331e-499f-85fa-c7451fe66657)
+The gNB (10.0.2.11) accepts the session and responds back to the UE (10.0.2.15). (2)  
+
+![2](https://github.com/samareshbera/5giitjammu/assets/96954630/41e0c774-68a8-4eea-8351-440fa055695b)
+
+
+GTP-U tunnel (10.45.0.2) is establised between the gNB and the UPF. (7)  
+
+![7](https://github.com/samareshbera/5giitjammu/assets/96954630/33cfc35a-3735-4218-8e5c-51cc1b25700b)
+
 
 To check for Internet access, try pinging `google.com` from the UE.
 
-`ping -I uesimtun0 google.com`  
-`PING google.com (142.250.x.x) from 10.45.0.2 uesimtun0: 56(84) bytes of data.`  
+`ping -I uesimtun0 google.com`   
 
-*insert ss...   
+The UE (10.0.2.15) tries to ping google.com (142.250.193.42) from the 5G network.  
+
+![p1](https://github.com/samareshbera/5giitjammu/assets/96954630/b377dc22-48e0-4a9f-945f-857d3332248b)
+
+As Internet access is available, google.com (142.250.193.42) responds back to the UE (10.0.2.15) with acknowledgement.  
+
+![p2](https://github.com/samareshbera/5giitjammu/assets/96954630/050a4c0c-d0ee-4ad3-8b2f-f4153d57d736)
+
 
 
