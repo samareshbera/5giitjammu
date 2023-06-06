@@ -235,7 +235,7 @@ The gNB (10.0.2.11) accepts the session and responds back to the UE (10.0.2.15).
 ![2](https://github.com/samareshbera/5giitjammu/assets/96954630/41e0c774-68a8-4eea-8351-440fa055695b)
 
 
-GTP-U tunnel (10.45.0.2) is establised between the gNB and the UPF. (7)  
+GTP-U tunnel (10.45.0.2) is established between the gNB and the UPF. (7)  
 
 ![7](https://github.com/samareshbera/5giitjammu/assets/96954630/33cfc35a-3735-4218-8e5c-51cc1b25700b)
 
