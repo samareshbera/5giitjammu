@@ -185,3 +185,19 @@ Click SAVE Button
 (ping command bind direcly to uesimtun0)  
 `ping -I uesimtun0 google.com`  
 
+  
+    
+
+# 5G Message Flow Monitoring using Wireshark
+
+Keep the terminals running in UE, gNB and Open5GS.  
+
+Run Wireshark in the Open5GS VM.  
+
+`sudo wireshark`  
+
+It can be seen that all the VMs are commmuncating with each other after the 5G network is established.  
+
+![1](https://github.com/samareshbera/5giitjammu/assets/96954630/1aba7ece-974b-4d16-b769-e0f8e477d02c)
+
+
