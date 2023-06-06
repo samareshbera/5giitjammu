@@ -198,6 +198,23 @@ Run Wireshark in the Open5GS VM.
 
 It can be seen that all the VMs are commmuncating with each other after the 5G network is established.  
 
-![1](https://github.com/samareshbera/5giitjammu/assets/96954630/1aba7ece-974b-4d16-b769-e0f8e477d02c)
+![1](https://github.com/samareshbera/5giitjammu/assets/96954630/33c9c732-ccc9-42b5-9f41-a3be6c355cef)
+
+Here, the following IPs mean the respective machine.  
+
+        UE = 10.0.2.15  
+        gNB = 10.0.2.11  
+        Open5GS = 10.2.0.13  
+
+To check for Internet access, try pinging `google.com` from the UE.
+
+`ping -I uesimtun0 google.com`  
+`PING google.com (142.250.77.206) from 10.45.0.2 uesimtun0: 56(84) bytes of data.`  
+
+![2](https://github.com/samareshbera/5giitjammu/assets/96954630/b4df9a77-2401-4c3c-9805-5e807a162601)
+
+
+It is seen that google.com (142.250.77.206) is being pinged from the tunnel (10.45.0.2) created.
+
 
 
