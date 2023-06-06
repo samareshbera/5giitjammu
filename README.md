@@ -210,7 +210,7 @@ It is seen that the PFCP session is established.
 To check for Internet access, try pinging `google.com` from the UE.
 
 `ping -I uesimtun0 google.com`  
-`PING google.com (142.250.77.206) from 10.45.0.2 uesimtun0: 56(84) bytes of data.`  
+`PING google.com (142.250.x.x) from 10.45.0.2 uesimtun0: 56(84) bytes of data.`  
 
 *insert ss...   
 
