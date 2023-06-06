@@ -205,7 +205,8 @@ Now, gNB(10.0.2.11) sends a NGSetupRequest to Open5gs(10.0.2.13).
 ![Screenshot 2023-06-06 231954](https://github.com/samareshbera/5giitjammu/assets/134690717/d02666b6-babf-4082-b223-600084ade942)  
 
 Open5gs(10.0.2.13) sends an acknowledgement to gNB(10.0.2.11) after successfully receiving the request.  
-*ack image.  
+
+![Screenshot 2023-06-06 232707](https://github.com/samareshbera/5giitjammu/assets/134690717/8086ea65-6c43-4c55-a3b6-d77bb74167c3)  
 
 Open5gs(10.0.2.13) will send NGSetupResponse to gNB(10.0.2.11).  
 *response image.  
