@@ -192,9 +192,7 @@ Click SAVE Button
 
 Wireshark is used to monitor the packet flows between the machines.  
 
-Run Wireshark in the Open5GS VM.  
-
-`sudo wireshark`  
+Run Wireshark in the Open5GS machine.  
 
 Restart the `amfd` and `upfd` services.  
 
