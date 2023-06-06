@@ -200,20 +200,21 @@ It is seen that the PFCP session is established.
 
 *INSERT THE PFCP IMAGE HERE.....  
 
-Now, gNB(10.0.2.11) sends a NGSetupRequest to Open5gs(10.0.2.13).  
+Now, gNB(10.0.2.11) sends a NGSetupRequest to Open5gs(10.0.2.13). (3)  
 
 ![Screenshot 2023-06-06 231954](https://github.com/samareshbera/5giitjammu/assets/134690717/d02666b6-babf-4082-b223-600084ade942)  
 
-Open5gs(10.0.2.13) sends an acknowledgement to gNB(10.0.2.11) after successfully receiving the request.  
+Open5gs(10.0.2.13) sends an acknowledgement to gNB(10.0.2.11) after successfully receiving the request. (3)  
 
 ![Screenshot 2023-06-06 232707](https://github.com/samareshbera/5giitjammu/assets/134690717/8086ea65-6c43-4c55-a3b6-d77bb74167c3)  
 
-Open5gs(10.0.2.13) will send NGSetupResponse to gNB(10.0.2.11).  
+Open5gs(10.0.2.13) will send NGSetupResponse to gNB(10.0.2.11). (4)  
 
 ![Screenshot 2023-06-06 233442](https://github.com/samareshbera/5giitjammu/assets/134690717/d2411c60-a9af-4ed4-a3da-4f62a63db7c1)  
 
-After receiving response, gNB(10.0.2.11) sends an Acknowledgement to Open5gs(10.0.2.13).  
-*ack image.  
+After receiving response, gNB(10.0.2.11) sends an Acknowledgement to Open5gs(10.0.2.13). (4)  
+
+![Screenshot 2023-06-06 233728](https://github.com/samareshbera/5giitjammu/assets/134690717/71c1c792-0436-4045-9f0e-f3837d845b26)  
 
 
 ## 5G Message Flow
