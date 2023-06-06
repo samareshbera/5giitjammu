@@ -205,6 +205,8 @@ Here, the following IPs mean the respective machine.
         UE = 10.0.2.15  
         gNB = 10.0.2.11  
         Open5GS = 10.2.0.13  
+        
+ ![5G flow](https://github.com/samareshbera/5giitjammu/assets/134690717/81a9ad7a-0c67-44d2-b979-3d9ed04047e7)
 
 To check for Internet access, try pinging `google.com` from the UE.
 
