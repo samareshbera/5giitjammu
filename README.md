@@ -202,11 +202,14 @@ It can be seen that all the VMs are commmuncating with each other after the 5G n
 
 Here, the following IPs mean the respective machine.  
 
-        UE = 10.0.2.15  
-        gNB = 10.0.2.11  
-        Open5GS = 10.2.0.13  
-        
- ![5G flow](https://github.com/samareshbera/5giitjammu/assets/134690717/81a9ad7a-0c67-44d2-b979-3d9ed04047e7)
+    UE = 10.0.2.15  
+    gNB = 10.0.2.11  
+    Open5GS = 10.2.0.13  
+
+
+## 5G Message Flow
+
+![5G flow](https://github.com/samareshbera/5giitjammu/assets/134690717/81a9ad7a-0c67-44d2-b979-3d9ed04047e7)
 
 To check for Internet access, try pinging `google.com` from the UE.
 
@@ -216,7 +219,7 @@ To check for Internet access, try pinging `google.com` from the UE.
 ![2](https://github.com/samareshbera/5giitjammu/assets/96954630/b4df9a77-2401-4c3c-9805-5e807a162601)
 
 
-It is seen that google.com (142.250.77.206) is being pinged from the tunnel (10.45.0.2) created.
+It is seen that google.com (142.250.77.206) is being pinged from the tunnel (10.45.0.2) created.  
 
 
 
