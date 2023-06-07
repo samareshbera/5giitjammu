@@ -223,7 +223,7 @@ Open5GS (10.0.2.13) sends NGSetupResponse to gNB(10.0.2.11). (5)
 
 After receiving response, gNB(10.0.2.11) sends an acknowledgement to Open5GS (10.0.2.13). (5)  
 
-![Screenshot 2023-06-06 233728](https://github.com/samareshbera/5giitjammu/assets/134690717/71c1c792-0436-4045-9f0e-f3837d845b26)  
+![Screenshot 2023-06-07 104800](https://github.com/samareshbera/5giitjammu/assets/134690717/c6b96f96-c78a-4dae-88ef-d9ef5994fd45)  
 
 After the UE is started, it (10.0.2.15) sends a PDU session request to gNB (10.0.2.11). (1)  
 
