@@ -185,7 +185,7 @@ Click SAVE Button
 (ping command bind direcly to uesimtun0)  
 `ping -I uesimtun0 google.com`  
 
-  
+---  
     
 
 # 5G Message Flow Monitoring using Wireshark
@@ -202,12 +202,11 @@ It is seen that the PFCP session is established.
 
 PFCP Association Setup Request is sent from SMF to UPF. (3)  
 
-![5](https://github.com/samareshbera/5giitjammu/assets/96954630/94aa6b2a-9adc-49af-a8c8-891042df8e9a)
+![pfcp1](https://github.com/samareshbera/5giitjammu/assets/96954630/305d2629-f388-4453-adcb-540d4c794358)
 
 UPF replies back to SMF with a PFCP Association Setup Response. (4)  
 
-![6](https://github.com/samareshbera/5giitjammu/assets/96954630/f1a6d189-16cc-4a5a-a48a-fe6fade45a5b)
-
+![pfcp2](https://github.com/samareshbera/5giitjammu/assets/96954630/cbabfcf2-3ac6-49e3-ba02-24e55149d651)
 
 The gNB (10.0.2.11) sends an NGSetupRequest to Open5GS(10.0.2.13). (2)  
 
@@ -227,17 +226,15 @@ After receiving response, gNB(10.0.2.11) sends an acknowledgement to Open5GS (10
 
 After the UE is started, it (10.0.2.15) sends a PDU session request to gNB (10.0.2.11). (1)  
 
-![1](https://github.com/samareshbera/5giitjammu/assets/96954630/48e5ba43-14ef-47fe-be74-4d83908f8f24)
+![1pdu](https://github.com/samareshbera/5giitjammu/assets/96954630/1fbd4bfa-08f2-498c-9404-46a426d327fb)
 
 The gNB (10.0.2.11) accepts the session and responds back to the UE (10.0.2.15). (7)  
 
-![2](https://github.com/samareshbera/5giitjammu/assets/96954630/41e0c774-68a8-4eea-8351-440fa055695b)
-
+![2pdu](https://github.com/samareshbera/5giitjammu/assets/96954630/c1509e19-ff34-48fa-a0b0-040d7d46a886)
 
 GTP-U tunnel (10.45.0.2) is established between the gNB and the UPF. (6)  
 
-![7](https://github.com/samareshbera/5giitjammu/assets/96954630/33cfc35a-3735-4218-8e5c-51cc1b25700b)
-
+![gtpu](https://github.com/samareshbera/5giitjammu/assets/96954630/9715e89b-6850-4768-b9af-83bce70160f0)
 
 To check for Internet access, try pinging `google.com` from the UE.
 
@@ -245,11 +242,9 @@ To check for Internet access, try pinging `google.com` from the UE.
 
 The UE (10.0.2.15) tries to ping google.com (142.250.193.42) from the 5G network.  
 
-![p1](https://github.com/samareshbera/5giitjammu/assets/96954630/b377dc22-48e0-4a9f-945f-857d3332248b)
+![p1](https://github.com/samareshbera/5giitjammu/assets/96954630/5f4e0884-d2c7-43a5-b7bb-115ddce8274a)
 
 As Internet access is available, google.com (142.250.193.42) responds back to the UE (10.0.2.15) with acknowledgement.  
 
-![p2](https://github.com/samareshbera/5giitjammu/assets/96954630/050a4c0c-d0ee-4ad3-8b2f-f4153d57d736)
-
-
+![p2](https://github.com/samareshbera/5giitjammu/assets/96954630/58cd5c91-11ca-4862-9620-6933f0416ca5)
 
