@@ -194,7 +194,7 @@ Wireshark is used to monitor the packet flows between the machines.
 
 ## Packets Flow
 
-![Screenshot 2023-06-06 215644](https://github.com/samareshbera/5giitjammu/assets/134690717/4e543105-331e-499f-85fa-c7451fe66657)
+![Screenshot 2023-06-07 103228](https://github.com/samareshbera/5giitjammu/assets/134690717/3b2f1ed6-a662-4acc-ab2f-61fbe4a16a9e)
 
 Restart the `amfd` and `upfd` services.  
 
