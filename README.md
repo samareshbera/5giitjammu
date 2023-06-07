@@ -1,5 +1,5 @@
 
-5G network - using UERANSIM and Open5GS
+# 5G Network - using UERANSIM and Open5GS
 
 ![Screenshot 2023-05-29 153657](https://github.com/samareshbera/5giitjammu/assets/134690717/65844f36-9a46-439d-82af-ccd6f9afb25d)
 
