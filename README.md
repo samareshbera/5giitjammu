@@ -209,11 +209,11 @@ UPF replies back to SMF with a PFCP Association Setup Response. (6)
 ![6](https://github.com/samareshbera/5giitjammu/assets/96954630/f1a6d189-16cc-4a5a-a48a-fe6fade45a5b)
 
 
-The gNB (10.0.2.11) sends an NGSetupRequest to Open5GS(10.0.2.13). (3)  
+The gNB (10.0.2.11) sends an NGSetupRequest to Open5GS(10.0.2.13). (2)  
 
-![Screenshot 2023-06-06 231954](https://github.com/samareshbera/5giitjammu/assets/134690717/d02666b6-babf-4082-b223-600084ade942)  
+![Screenshot 2023-06-07 104228](https://github.com/samareshbera/5giitjammu/assets/134690717/5ecb4dc1-5f66-40af-9df0-3b90f2cd84ab)  
 
-Open5GS (10.0.2.13) sends an acknowledgement to gNB (10.0.2.11) after successfully receiving the request. (3)  
+Open5GS (10.0.2.13) sends an acknowledgement to gNB (10.0.2.11) after successfully receiving the request. (2)  
 
 ![Screenshot 2023-06-06 232707](https://github.com/samareshbera/5giitjammu/assets/134690717/8086ea65-6c43-4c55-a3b6-d77bb74167c3)  
 
