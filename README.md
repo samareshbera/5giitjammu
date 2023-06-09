@@ -89,7 +89,7 @@ A few changes need to be made to the config files to deploy the network and make
 `sudo nano /etc/open5gs/amf.yaml`  
 
     ngap:
-     - addr: 10.0.2.5
+     - addr: 10.0.2.13
 
     guami:
        - plmn_id:
@@ -110,7 +110,7 @@ A few changes need to be made to the config files to deploy the network and make
 `sudo nano /etc/open5gs/upf.yaml`  
 
     gtpu:
-        - addr: 10.2.0.5
+        - addr: 10.2.0.13
 
 
 After making the changes, restart Open5GS.
