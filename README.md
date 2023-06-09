@@ -38,7 +38,7 @@ UERANSIM/config/open5gs-ue.yaml
     mnc: '70'  
 
     gnbSearchList:  
-      - 10.0.2.13  
+      - 10.0.2.11  
 
 UERANSIM/config/open5gs-gnb.yaml
 
